@@ -7,6 +7,9 @@ locals{
 
   lengthsa=length(local.servicename)
   lengthforum=length(local.forum)
+   lengthfirstname=length(local.firstname)
+ lengthlastname=length(local.lastname)
+ lengthcity=length(local.city)
 }
 output "print"{
     value = local.servicename
@@ -23,9 +26,13 @@ output "printcity"{
 output "secondprint"{
     value = local.forum
 }
-output "lengthsa"{
-    value=local.lengthsa
+output "lengthfirstname"{
+    value=local.lengthfirstnam
 }
-output "lengthforum"{
-    value=local.lengthforum
+output "lengthlastname"{
+    value=local.lengthflastname
 }
+output "lengthcity"{
+    value=local.lengthcity
+}
+
