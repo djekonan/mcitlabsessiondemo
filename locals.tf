@@ -27,10 +27,10 @@ output "secondprint"{
     value = local.forum
 }
 output "lengthfirstname"{
-    value=local.lengthfirstnam
+    value=local.lengthfirstname
 }
 output "lengthlastname"{
-    value=local.lengthflastname
+    value=local.lengthlastname
 }
 output "lengthcity"{
     value=local.lengthcity
