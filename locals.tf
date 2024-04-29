@@ -10,7 +10,7 @@ locals{
    lengthfirstname=length(local.firstname)
  lengthlastname=length(local.lastname)
  lengthcity=length(local.city)
-variable "company_name"{
+ variable "company_name"{
 type= string
 defauft= "Montreal College Information Technology"
 }
