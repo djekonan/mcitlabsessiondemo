@@ -10,30 +10,14 @@ locals{
    lengthfirstname=length(local.firstname)
  lengthlastname=length(local.lastname)
  lengthcity=length(local.city)
- variable company_name{
-type= string
-defauft= "Montreal College Information Technology"
+
+output "city"{
+    value = local.city
 }
-variable yesar_of_establishment{
-type= number
-defauft= "5"
-}
-variable ifelsecheck {
-type= bool
-defauft= "false"
+output "lastname"{
+    value = local.lastname.
 }
 
-
-}
-output "company_name"{
-    value = local.company_name
-}
-output "yesar_of_establishment"{
-    value = local.yesar_of_establishment
-}
-output "ifelsecheck"{
-    value = local.ifelsecheck
-}
 output "printcity"{
     value = local.city
 }
