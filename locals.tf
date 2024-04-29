@@ -15,7 +15,7 @@ output "city"{
     value = local.city
 }
 output "lastname"{
-    value = local.lastname.
+    value = local.lastname
 }
 
 output "printcity"{
@@ -24,13 +24,5 @@ output "printcity"{
 output "secondprint"{
     value = local.forum
 }
-output "lengthfirstname"{
-    value=local.lengthfirstname
-}
-output "lengthlastname"{
-    value=local.lengthlastname
-}
-output "lengthcity"{
-    value=local.lengthcity
-}
+
 
