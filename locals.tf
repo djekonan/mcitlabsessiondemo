@@ -21,8 +21,8 @@ output "lastname"{
 output "printcity"{
     value = local.city
 }
-output "secondprint"{
-    value = local.forum
+output "firstname"{
+    value = local.firstname
 }
 
 
