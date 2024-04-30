@@ -11,17 +11,17 @@ locals{
  lengthlastname=length(local.lastname)
  lengthcity=length(local.city)
 
-output "city"{
+output "printcity"{
     value = local.city
 }
-output "lastname"{
+output "printlastname"{
     value = local.lastname
 }
 
 output "printcity"{
     value = local.city
 }
-output "firstname"{
+output "printfirstname"{
     value = local.firstname
 }
 
