@@ -16,3 +16,6 @@ output "lengthsa"{
 output "lengthforum"{
     value=local.lengthforum
 }
+output "concatenated_string" {
+  value = "${firstname_string}${var.hyacinthe}"
+}
