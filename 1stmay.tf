@@ -1,7 +1,11 @@
+//==================================================1st May 2024=========================================//
 variable "original_string" {
   default = "Montreal College Information Technology"
 }
-
+variable "input_string" {
+  type    = string
+  default = "upper LOWER"
+}
 # Function 1: Length of the string
 output "string_length" {
   value = length(var.original_string)
@@ -19,7 +23,7 @@ output "lowercase_string" {
 
 # Function 4: Replace "Hello" with "Hi"
 output "replaced_string" {
-  value = replace(var.original_string, "Montreal College Information Technology", "McGill University")
+  value = replace(var.original_string, " ", "")
 }
 
 # Function 5: Concatenate with another string
@@ -45,7 +49,9 @@ output "split_example" {
 variable "string_list" {
   default = ["Montreal", "College","Information","Technology"]
 }
-
+output "reverse_examplesecond"{
+  value=reverse(var.string_list)
+}
 output "join_example" {
   value = join(" ", var.string_list)
 }
@@ -65,12 +71,16 @@ output "reverse_example" {
 }
 
 locals {
-  contains_keyword = contains(split(" ", var.original_string), "Montreal")
+  contains_keyword = contains(split(" ", var.original_string), "MCIT")
 }
-
+output "contains_keyword_output"{
+    value=local.contains_keyword
+}
 
 output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
 }
 
-
+output "string_contains_sample" {
+  value = local.contains_keyword ? "String contains 'Montreal'" : "String does not contain 'Montreal'"
+}
