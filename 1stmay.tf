@@ -73,4 +73,4 @@ output "string_contains_no_sample" {
   value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
 }
 
-output "countries" 
+
