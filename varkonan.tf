@@ -1,9 +1,6 @@
-
-variable "firstname" {
-  default = "konan"
+variable "countries" {
+  default = ["Belgigue", "Chine","Italie","France","Suisse",]
 }
-
-variable "lastname" {
-  default = "hyacinthe"
+variable "countries_string" {
+    value = ' + '.join(var.countries)
 }
-
