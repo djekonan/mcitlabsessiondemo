@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "azureresourcegroup" {
 }
 resource "azurerm_storage_account" "azurermmcitcountexample" {
   count=5
-  name                     = "${var.firstname}${var.lastname}storage${count.index}"
+ # name                     = "${var.firstname}${var.lastname}storage${count.index}"
   resource_group_name      = azurerm_resource_group.azureresourcegroup.name
   location                 = azurerm_resource_group.azureresourcegroup.location
   account_tier             = var.account_tier
