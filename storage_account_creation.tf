@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "azureresourcegroup" {
   name     = "MCIT_Lab_session"
   location = "Canada Central"
 }
- resource "azurerm_storage_account" "azurermmcitcountexample" {
+resource "azurerm_storage_account" "azurermmcitcountexample" {
   count=5
   name                     = "${var.firstname}${var.lastname}storage${count.index}"
   resource_group_name      = azurerm_resource_group.azureresourcegroup.name
@@ -17,4 +17,3 @@ resource "azurerm_resource_group" "azureresourcegroup" {
     environment = var.environment
   }
 }
-
