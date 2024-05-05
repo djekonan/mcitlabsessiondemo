@@ -2,7 +2,6 @@
 
 
 
-
 variable "nested_map" {
   type = map(map(string))
   default = {
@@ -18,12 +17,14 @@ variable "total_output" {
   default = ["150", "150", "150"]
 }
 
-locals {
-  incremented_output = [for num in var.total_output : tostring(tonumber(num) + 10)]
-}
+
 output "updated_nested_map" {
   value = var.nested_map
 }
 output "incremented_output" {
   value = local.incremented_output
+}
+
+locals {
+  incremented_output = [for num in var.total_output : tostring(tonumber(num) + 10)]
 }
