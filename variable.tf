@@ -44,7 +44,4 @@ variable "environment"{
  type=string
  default="staging"
 }
-variable "total_output" {
-  type    = list(string)
-  default = ["150", "150", "150"]
-}
+
