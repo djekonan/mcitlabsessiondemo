@@ -2,7 +2,7 @@
 
 
 
-1
+
 variable "nested_map" {
   type = map(map(string))
   default = {
@@ -12,7 +12,7 @@ variable "nested_map" {
   }
 }
 
-2
+
 variable "total_output" {
   type    = list(string)
   default = ["150", "150", "150"]
