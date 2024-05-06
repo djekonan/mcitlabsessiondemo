@@ -31,9 +31,7 @@ variable "winterlistOfSports" {
 locals {
   extensive = length(var.winterlistOfSports) > 3
 }
-locals {
-  clouds = ["azure", "aws", "gcp"]
-}
+
 
 output "updated_nested_map" {
   value = var.nested_map
