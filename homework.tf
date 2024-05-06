@@ -16,12 +16,12 @@ Locals {
 output "cloud_check" {
   value = contains(local.clouds, "azure") ? "Azure is part of the cloud list" : "Azure is not part of the cloud list"
 }
-output "flattened_list" {
-  value = local.flattened_list
+output "flatkonan" {
+  value = local.flatkonan
 }
 
-output "sum_of_elements" {
-  value = local.sum_of_elements
+output "sumkonfat" {
+  value = local.sumkonfat
 }
 
 
