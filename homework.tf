@@ -47,9 +47,7 @@ output "Winter_sports_list_status" {
   value = local.extensive ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
 
-output "cloud_check" {
-  value = contains(local.clouds, "azure") ? "Azure is part of the cloud list" : "Azure is not part of the cloud list"
-}
+
 output "cloud_ownership" {
   value = local.cloud_owner_map
 }
