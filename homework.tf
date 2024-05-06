@@ -6,7 +6,7 @@ locals {
   cloud_owner_map = zipmap(local.clouds, local.cloud_owners)
 }
 
-Locals {
+locals {
   konan = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
   flatkonan = flatten(local.konan)
   sumkonfat = sum(local.flatkonan)
