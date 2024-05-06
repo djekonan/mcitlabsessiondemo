@@ -25,6 +25,9 @@ variable "winterlistOfSports" {
 locals {
   extensive = length(var.winterlistOfSports) > 3
 }
+locals {
+  clouds = ["azure", "aws", "gcp"]
+}
 
 output "updated_nested_map" {
   value = var.nested_map
@@ -38,4 +41,8 @@ locals {
 }
 output "Winter_sports_list_status" {
   value = local.extensive ? "Winter sports list is extensive" : "Winter sports list is limited"
+}
+
+output "cloud_check" {
+  value = contains(local.clouds, "azure") ? "Azure is part of the cloud list" : "Azure is not part of the cloud list"
 }
