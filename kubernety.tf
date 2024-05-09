@@ -12,7 +12,7 @@ variable "environment" {
 
 resource "azurerm_resource_group" "konangp" {
   name     = "datacentes"
-  location = "USA"
+  location = "australiacentral"
 }
 
 resource "azurerm_kubernetes_cluster" "konangp" {
