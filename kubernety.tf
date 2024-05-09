@@ -1,6 +1,4 @@
-provider "azurerm" {
-  features {}
-}
+
 
 variable "clusterlist" {
   type    = list(string)
